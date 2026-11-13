@@ -1,0 +1,127 @@
+/* ============================================================
+   Markdown 预览样式 · 方案 B · 青柠气泡
+   与 settings.json 里 editor.tokenColorCustomizations 同一套配色
+   （只改文字颜色，不改背景，交给 VS Code 主题决定）
+   ============================================================ */
+
+body {
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Segoe UI", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #8BE9FD;               /* 正文：青 */
+  padding: 1.2em 2em 3em;
+  max-width: 900px;
+}
+
+/* ---------- 标题 ---------- */
+h1 {
+  color: #FFE066;               /* H1：黄 */
+  font-size: 1.9em;
+  border-bottom: 1px solid rgba(255, 224, 102, 0.35);
+  padding-bottom: 0.25em;
+}
+
+h2 {
+  color: #A7F432;               /* H2：青柠 */
+  font-size: 1.45em;
+  border-bottom: 1px solid rgba(167, 244, 50, 0.25);
+  padding-bottom: 0.2em;
+}
+
+h3, h4, h5, h6 {
+  color: #FF8FAB;               /* H3-H6：粉 */
+}
+
+/* ---------- 行内元素 ---------- */
+strong {
+  color: #FFE066;               /* 粗体：黄 */
+}
+
+em {
+  color: #A7F432;               /* 斜体：青柠 */
+}
+
+a {
+  color: #FF8FAB;               /* 链接：粉 */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+del {
+  color: #FF8FAB;
+}
+
+/* ---------- 代码 ---------- */
+code {
+  color: #FF8FAB;
+  background: rgba(255, 143, 171, 0.10);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  font-size: 0.92em;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 3px solid #A7F432;
+  border-radius: 6px;
+  padding: 0.9em 1.1em;
+  overflow-x: auto;
+}
+
+pre code {
+  color: #8BE9FD;
+  background: none;
+  padding: 0;
+}
+
+/* ---------- 引用 / 分隔线 ---------- */
+blockquote {
+  color: #FF8FAB;
+  border-left: 3px solid #FF8FAB;
+  margin-left: 0;
+  padding-left: 1em;
+  opacity: 0.95;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(139, 233, 253, 0.25);
+  margin: 2em 0;
+}
+
+/* ---------- 列表 ---------- */
+ul li::marker,
+ol li::marker {
+  color: #FFE066;
+}
+
+li > p {
+  margin: 0.2em 0;
+}
+
+/* ---------- 表格 ---------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+table th {
+  color: #FFE066;
+  border-bottom: 2px solid rgba(255, 224, 102, 0.4);
+  padding: 0.45em 0.7em;
+  text-align: left;
+}
+
+table td {
+  color: #8BE9FD;
+  border-bottom: 1px solid rgba(139, 233, 253, 0.15);
+  padding: 0.45em 0.7em;
+}
+
+/* ---------- 图片 ---------- */
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
